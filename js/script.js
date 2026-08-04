@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.className = "lightbox";
 
     lightbox.innerHTML = `
-        <span class="close-btn">&times;</span>
+       <span class="close-btn">&times;</span>
 
-        <button class="nav-btn prev-btn">&#10094;</button>
+<button class="nav-btn prev-btn">❮</button>
 
-        <img src="" alt="Photo appartement">
+<img src="" alt="Photo appartement">
 
-        <button class="nav-btn next-btn">&#10095;</button>
+<button class="nav-btn next-btn">❯</button>
 
-        <div class="counter"></div>
+<div class="counter"></div>
     `;
 
     document.body.appendChild(lightbox);
