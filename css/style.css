@@ -228,74 +228,46 @@ section h2{
 ========================= */
 
 .gallery-grid img{
-    cursor:p*inter;
-}
-
-.lightbox{
-    position:*ixed;
-    inset:0;
-    background:*gba(0,0,0,0.95);
-    z-index:9999;*
-    display:none;
-
-    justify-co*tent:center;
-    align-items:cente*;
-
-    flex-direction:column;
-}
-
-.*ightbox img{
-    max-width:90%;
-  * max-height:85vh;
-    border-radiu*:12px;
-}
-
-.close-btn{
-    position*absolute;
-    top:20px;
-    right:*0px;
-    color:white;
-    font-siz*:40px;
     cursor:pointer;
 }
 
-.nav*btn{
+.close-btn{
     position:absolute;
-
-    t*p:50%;
-
-    transform:translateY(-*0%);
-
-    border:none;
-
-    width:*0px;
-    height:60px;
-
-    border-*adius:50%;
-
-    background:rgba(25*,255,255,0.2);
-
+    top:20px;
+    right:30px;
     color:white;
+    font-size:40px;
+    cursor:pointer;
+}
 
-*   font-size:30px;
-
-    cursor:poi*ter;
+.nav-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:30px;
+    cursor:pointer;
 }
 
 .prev-btn{
     left:25px;
-*
+}
 
 .next-btn{
     right:25px;
 }
 
-.c*unter{
+.counter{
     color:white;
-    margin*top:15px;
+    margin-top:15px;
     font-size:18px;
 }
-``*
+``
 /* DESCRIPTION */
 
 .description{
