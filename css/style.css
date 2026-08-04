@@ -327,11 +327,18 @@ section h2{
 .contact-btn{
     display:inline-block;
     margin-top:20px;
-    background:var(--blue);
+    background:#17466f;
     color:white;
     padding:14px 25px;
     border-radius:30px;
     text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#0f3353;
+    transform:translateY(-2px);
 }
 
 .coming-soon{
