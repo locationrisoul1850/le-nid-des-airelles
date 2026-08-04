@@ -4,31 +4,107 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Création lightbox
+    const images = document.querySelectorAll(".gallery-grid img");
+
+    let currentIndex = 0;
+
     const lightbox = document.createElement("div");
-    lightbox.classList.add("lightbox");
+    lightbox.className = "lightbox";
 
-    const image = document.createElement("img");
+    lightbox.innerHTML = `
+        <span class="close-btn">&times;</span>
 
-    lightbox.appendChild(image);
+        <button class="nav-btn prev-btn">&#10094;</button>
+
+        <img src="" alt="Photo appartement">
+
+        <button class="nav-btn next-btn">&#10095;</button>
+
+        <div class="counter"></div>
+    `;
+
     document.body.appendChild(lightbox);
 
-    // Ouverture image
-    document.querySelectorAll(".gallery-grid img").forEach(img => {
+    const lightboxImg = lightbox.querySelector("img");
+    const counter = lightbox.querySelector(".counter");
+
+    function showImage(index) {
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex].src;
+        counter.textContent =
+            (currentIndex + 1) + " / " + images.length;
+    }
+
+    images.forEach((img, index) => {
 
         img.addEventListener("click", () => {
 
-            image.src = img.src;
             lightbox.style.display = "flex";
-            
+            showImage(index);
+
         });
 
     });
 
-    // Fermeture
-    lightbox.addEventListener("click", () => {
+    lightbox.querySelector(".close-btn")
+        .addEventListener("click", () => {
 
-        lightbox.style.display = "none";
+            lightbox.style.display = "none";
+
+        });
+
+    lightbox.querySelector(".prev-btn")
+        .addEventListener("click", () => {
+
+            currentIndex =
+                (currentIndex - 1 + images.length)
+                % images.length;
+
+            showImage(currentIndex);
+
+        });
+
+    lightbox.querySelector(".next-btn")
+        .addEventListener("click", () => {
+
+            currentIndex =
+                (currentIndex + 1)
+                % images.length;
+
+            showImage(currentIndex);
+
+        });
+
+    document.addEventListener("keydown", (e) => {
+
+        if (lightbox.style.display !== "flex")
+            return;
+
+        if (e.key === "ArrowLeft") {
+
+            currentIndex =
+                (currentIndex - 1 + images.length)
+                % images.length;
+
+            showImage(currentIndex);
+
+        }
+
+        if (e.key === "ArrowRight") {
+
+            currentIndex =
+                (currentIndex + 1)
+                % images.length;
+
+            showImage(currentIndex);
+
+        }
+
+        if (e.key === "Escape") {
+
+            lightbox.style.display = "none";
+
+        }
 
     });
 
