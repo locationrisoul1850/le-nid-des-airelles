@@ -463,3 +463,50 @@ section.show{
     opacity:1;
     transform:translateY(0);
 }
+
+/* DESCRIPTION DETAILLE ANNONCE */
+
+.infos-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.info-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+.info-card h3{
+
+    margin-bottom:15px;
+
+    color:#17466f;
+
+}
+
+.info-card ul{
+
+    padding-left:20px;
+
+}
+
+.info-card li{
+
+    margin-bottom:8px;
+
+}
