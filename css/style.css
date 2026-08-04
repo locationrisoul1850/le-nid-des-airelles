@@ -409,8 +409,8 @@ footer{
     }
 }
 section{
-    opacity:0;
-    transform:translateY(40px);
+    opacity:1;
+    transform:none;
     transition:0.7s;
 }
 
