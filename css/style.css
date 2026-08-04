@@ -545,3 +545,30 @@ section.show{
     margin-bottom:8px;
 
 }
+
+.season-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.season-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.season-card h3{
+
+    color:#17466f;
+
+    margin-bottom:10px;
+}
