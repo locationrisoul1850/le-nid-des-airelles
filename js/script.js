@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         img.addEventListener("click", () => {
 
-            lightbox.style.display = "flex";
             image.src = img.src;
-
+            lightbox.style.display = "flex";
+            
         });
 
     });
@@ -56,21 +56,31 @@ const roomImages = {
 };
 
 document.querySelectorAll(".hotspot").forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        const room = button.dataset.room;
-
-        const lightbox = document.querySelector(".lightbox");
-
-        const image = lightbox.querySelector("img");
-
-        image.src = roomImages[room];
-
-        lightbox.style.display = "flex";
-
-    });
-
+ 
+button.addEventListener("click", () => {
+ 
+const room = button.dataset.room;
+ 
+const imagePath = roomImages[room];
+ 
+if(imagePath){
+ 
+const img = document.createElement("img");
+ 
+img.src = imagePath;
+ 
+const lightbox = document.querySelector(".lightbox");
+ 
+const existingImg = lightbox.querySelector("img");
+ 
+existingImg.src = imagePath;
+ 
+lightbox.style.display = "flex";
+ 
+}
+ 
+});
+ 
 });
 
 // =====================================
