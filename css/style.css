@@ -592,3 +592,16 @@ section.show{
     box-shadow:0 8px 20px rgba(0,0,0,.15);
 
 }
+.season-note{
+
+    text-align:center;
+
+    margin:20px 0;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    color:#17466f;
+
+}
