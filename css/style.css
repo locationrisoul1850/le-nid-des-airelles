@@ -408,3 +408,13 @@ footer{
         font-size:18px;
     }
 }
+section{
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.7s;
+}
+
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
