@@ -377,7 +377,7 @@ section h2{
 /* TARIFS */
 
 #tarifs img{
-    max-width:900px;
+    max-width:700px;
     width:100%;
     display:block;
     margin-top:60px;
@@ -461,7 +461,7 @@ footer{
 @media(max-width:900px){
 
     .hero{
-padding-top:160px;
+padding-top:200px;
 } 
     .hero-buttons{
     display:flex;
