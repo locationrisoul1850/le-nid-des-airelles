@@ -1,10 +1,5 @@
-// =====================================
-// GALERIE PHOTO PLEIN ECRAN
-// =====================================
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Création lightbox
     const lightbox = document.createElement("div");
     lightbox.classList.add("lightbox");
 
@@ -13,19 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.appendChild(image);
     document.body.appendChild(lightbox);
 
-    // Ouverture image
     document.querySelectorAll(".gallery-grid img").forEach(img => {
 
         img.addEventListener("click", () => {
 
-            lightbox.style.display = "flex";
             image.src = img.src;
+            lightbox.style.display = "flex";
 
         });
 
     });
 
-    // Fermeture
     lightbox.addEventListener("click", () => {
 
         lightbox.style.display = "none";
@@ -34,25 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// =====================================
-// PLAN INTERACTIF APPARTEMENT
-// =====================================
-
 const roomImages = {
 
     "Chambre":"images/chambre.jpg",
-
     "Coin montagne":"images/coin-montagne.jpg",
-
     "Salon":"images/salon.jpg",
-
     "Cuisine":"images/cuisine.jpg",
-
     "Salle de bain":"images/salle-bain.jpg",
-
     "WC":"images/wc.jpg",
-
     "Terrasse":"images/terrasse.jpg"
+
 };
 
 document.querySelectorAll(".hotspot").forEach(button => {
@@ -61,41 +45,24 @@ document.querySelectorAll(".hotspot").forEach(button => {
 
         const room = button.dataset.room;
 
-        const lightbox = document.querySelector(".lightbox");
+        const imagePath = roomImages[room];
 
-        const image = lightbox.querySelector("img");
+        if(imagePath){
 
-        image.src = roomImages[room];
+            const img = document.createElement("img");
 
-        lightbox.style.display = "flex";
+            img.src = imagePath;
 
-    });
+            const lightbox = document.querySelector(".lightbox");
 
-});
+            const existingImg = lightbox.querySelector("img");
 
-// =====================================
-// ANIMATION APPARITION AU SCROLL
-// =====================================
+            existingImg.src = imagePath;
 
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show");
+            lightbox.style.display = "flex";
 
         }
 
     });
-
-},
-{
-    threshold:0.1
-});
-
-document.querySelectorAll("section").forEach(section => {
-
-    observer.observe(section);
 
 });
