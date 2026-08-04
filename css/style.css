@@ -95,12 +95,12 @@ min-height:75vh;
 }
 
 .hero h1{
-    font-size:4rem;
+    font-size:clamp(2rem,6vw,4rem);
     margin-bottom:20px;
 }
 
 .hero h2{
-    font-size:1.8rem;
+    font-size:clamp(1rem,3vw,1.8rem);
     margin-bottom:20px;
 }
 
@@ -241,7 +241,7 @@ section h2{
 }
 
 .gallery-grid img:hover{
-    transform:scale(1.03);
+    transform:scale(1.02);
 }
 
 /* =========================
@@ -460,6 +460,25 @@ footer{
 
 @media(max-width:900px){
 
+    .hero-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn{
+    width:250px;
+    text-align:center;
+}
+
+.coming-soon{
+    flex-direction:column;
+    align-items:center;
+}
+
+section{
+    padding:60px 20px;
+}
     .navbar{
         flex-direction:column;
         gap:15px;
