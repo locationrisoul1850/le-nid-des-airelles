@@ -114,48 +114,80 @@ document.addEventListener("DOMContentLoaded", () => {
 // PLAN INTERACTIF APPARTEMENT
 // =====================================
 
-const roomImages = {
+const roomData = {
 
-    "Chambre":"images/chambre.jpg",
+    "Chambre": {
+        image: "images/chambre.jpg",
+        description:
+            "Lit Queen Size 160x200 avec placard de rangement et chambre indépendante."
+    },
 
-    "Coin montagne":"images/coin-montagne.jpg",
+    "Coin montagne": {
+        image: "images/coin-montagne.jpg",
+        description:
+            "Lit superposé 3 couchages avec lampe de lecture individuelle."
+    },
 
-    "Salon":"images/salon.jpg",
+    "Salon": {
+        image: "images/salon.jpg",
+        description:
+            "Salon chaleureux avec canapé gigogne 160x200, Smart TV et jeux de société."
+    },
 
-    "Cuisine":"images/cuisine.jpg",
+    "Cuisine": {
+        image: "images/cuisine.jpg",
+        description:
+            "Cuisine équipée : Dolce Gusto, induction, four multifonction, raclette et fondue."
+    },
 
-    "Salle de bain":"images/salle-bain.jpg",
+    "Salle de bain": {
+        image: "images/salle-bain.jpg",
+        description:
+            "Salle de bain rénovée avec baignoire, colonne de douche, miroir LED et sèche-serviettes."
+    },
 
-    "WC":"images/wc.jpg",
+    "WC": {
+        image: "images/wc.jpg",
+        description:
+            "WC séparé pour plus de confort."
+    },
 
-    "Terrasse":"images/terrasse.jpg"
+    "Terrasse": {
+        image: "images/terrasse.jpg",
+        description:
+            "Terrasse privative de 5,31 m² exposée Sud-Ouest avec espace vert devant l'appartement."
+    }
+
 };
 
 document.querySelectorAll(".hotspot").forEach(button => {
- 
-button.addEventListener("click", () => {
- 
-const room = button.dataset.room;
- 
-const imagePath = roomImages[room];
- 
-if(imagePath){
- 
-const img = document.createElement("img");
- 
-img.src = imagePath;
- 
-const lightbox = document.querySelector(".lightbox");
- 
-const existingImg = lightbox.querySelector("img");
- 
-existingImg.src = imagePath;
- 
-lightbox.style.display = "flex";
- 
-}
- 
-});
+
+    button.addEventListener("click", () => {
+
+        const room = button.dataset.room;
+
+        const data = roomData[room];
+
+        if (!data) return;
+
+        const lightbox =
+            document.querySelector(".lightbox");
+
+        const existingImg =
+            lightbox.querySelector("img");
+
+        existingImg.src = data.image;
+
+        const counter =
+            lightbox.querySelector(".counter");
+
+        counter.innerHTML =
+            "<strong>" + room + "</strong><br>" +
+            data.description;
+
+        lightbox.style.display = "flex";
+
+    });
  
 });
 
