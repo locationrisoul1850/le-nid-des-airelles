@@ -223,13 +223,30 @@ section h2{
     100%{transform:scale(1);}
 }
 
+/* GALERIE */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:18px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
 /* =========================
    GALERIE PREMIUM
 ========================= */
-
-.gallery-grid img{
-    cursor:pointer;
-}
 
 .close-btn{
     position:absolute;
