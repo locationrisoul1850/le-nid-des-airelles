@@ -40,19 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const roomImages = {
 
-    "Chambre":"images/chambre.jpg","🛏️ Chambre indépendante avec lit Queen Size 160x200 et placard de rangement.",
+    "Chambre":"images/chambre.jpg",
 
-    "Coin montagne":"images/coin-montagne.jpg","🛌 Coin montagne avec lit superposé 3 couchages et lampes de lecture individuelles.",
+    "Coin montagne":"images/coin-montagne.jpg",
 
-    "Salon":"images/salon.jpg","📺 Salon chaleureux avec canapé gigogne 160x200, Smart TV AirPlay et Miracast.",
+    "Salon":"images/salon.jpg",
 
-    "Cuisine":"images/cuisine.jpg","🍳 Cuisine équipée : Dolce Gusto, raclette, fondue, induction, four multifonction.",
+    "Cuisine":"images/cuisine.jpg",
 
-    "Salle de bain":"images/salle-bain.jpg","🛁 Salle de bain rénovée en 2026 avec baignoire, douche, miroir LED et sèche-serviettes.",
+    "Salle de bain":"images/salle-bain.jpg",
 
-    "WC":"images/wc.jpg","🚻 WC séparé pour plus de confort.",
+    "WC":"images/wc.jpg",
 
-    "Terrasse":"images/terrasse.jpg","☀️ Terrasse privative de 5,31 m² exposée Sud-Ouest avec vue dégagée."
+    "Terrasse":"images/terrasse.jpg"
 };
 
 document.querySelectorAll(".hotspot").forEach(button => {
