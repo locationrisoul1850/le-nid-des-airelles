@@ -642,3 +642,44 @@ padding:25px 15px;
 .reservation-box{
     width:100%;
 }
+
+.tarif-resume{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+.tarif-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+.tarif-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.tarif-card h4{
+
+    color:#17466f;
+
+    margin-bottom:10px;
+
+}
