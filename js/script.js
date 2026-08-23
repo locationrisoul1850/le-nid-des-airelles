@@ -160,6 +160,24 @@ const roomData = {
 
 };
 
+"Entrée": {
+    image: "images/entree.jpg",
+    description:
+        "Entrée fonctionnelle avec porte-manteau 8 patères et range chaussures."
+},
+
+"Salle à manger": {
+    image: "images/Salleamanger.JPG",
+    description:
+        "Espace repas convivial permettant de partager les repas en famille ou entre amis."
+},
+
+"Placard": {
+    image: "images/Placard.jpg",
+    description:
+        "Grand espace de rangement pratique pour les vêtements, valises, jeux de société, literie du canapée et kit de dépannage ampoule, pile..."
+},
+
 document.querySelectorAll(".hotspot").forEach(button => {
 
     button.addEventListener("click", () => {
