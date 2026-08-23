@@ -209,16 +209,16 @@ section h2{
     transform:scale(1.15);
 }
 
-.chambre{top:72%;left:18%;}
-.montagne{top:54%;left:45%;}
-.salon{top:28%;left:34%;}
+.chambre{top:54%;left:18%;}
+.montagne{top:50%;left:40%;}
+.salon{top:28%;left:38%;}
 .cuisine{top:36%;left:68%;}
-.sdb{top:68%;left:72%;}
-.wc{top:52%;left:77%;}
-.terrasse{top:25%;left:90%;}
-.salleamanger{top:38%;left:50%;}
-.entree{top:20%;left:55%;}
-.placard{top:60%;left:60%;}
+.sdb{top:73%;left:68%;}
+.wc{top:52%;left:68%;}
+.terrasse{top:25%;left:87%;}
+.salleamanger{top:20%;left:60%;}
+.entree{top:70%;left:34%;}
+.placard{top:70%;left:55%;}
 
 @keyframes pulse{
     0%{transform:scale(1);}
