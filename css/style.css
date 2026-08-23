@@ -216,6 +216,9 @@ section h2{
 .sdb{top:68%;left:72%;}
 .wc{top:52%;left:77%;}
 .terrasse{top:25%;left:90%;}
+.salleamanger{top:38%;left:50%;}
+.entree{top:20%;left:55%;}
+.placard{top:60%;left:60%;}
 
 @keyframes pulse{
     0%{transform:scale(1);}
