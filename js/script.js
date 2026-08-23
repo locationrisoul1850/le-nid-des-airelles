@@ -156,9 +156,8 @@ const roomData = {
         image: "images/terrasse.jpg",
         description:
             "Terrasse privative de 5,31 m² exposée Sud-Ouest avec espace vert devant l'appartement."
-    }
+    },
 
-};
 
 "Entrée": {
     image: "images/entree.jpg",
@@ -176,7 +175,8 @@ const roomData = {
     image: "images/Placard.jpg",
     description:
         "Grand espace de rangement pratique pour les vêtements, valises, jeux de société, literie du canapée et kit de dépannage ampoule, pile..."
-},
+    }
+};
 
 document.querySelectorAll(".hotspot").forEach(button => {
 
