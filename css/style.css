@@ -922,3 +922,26 @@ padding:25px 15px;
     margin-top:auto;
 
 }
+
+@media(max-width:900px){
+
+    .coming-soon{
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:center !important;
+
+    }
+
+    .booking-card{
+
+        width:100% !important;
+
+        max-width:320px !important;
+
+    }
+
+}
+
