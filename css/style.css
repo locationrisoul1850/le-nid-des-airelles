@@ -737,3 +737,19 @@ padding:25px 15px;
     font-size:1.1rem;
 
 }
+
+.footer-logo{
+
+    margin-bottom:20px;
+
+}
+
+.footer-logo img{
+
+    max-width:280px;
+
+    width:100%;
+
+    height:auto;
+
+}
