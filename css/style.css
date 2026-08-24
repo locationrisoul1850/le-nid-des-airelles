@@ -753,3 +753,31 @@ padding:25px 15px;
     height:auto;
 
 }
+
+.airbnb-btn{
+
+    display:inline-block;
+
+    background:#FF5A5F;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 24px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.airbnb-btn:hover{
+
+    background:#e04a4f;
+
+    transform:translateY(-2px);
+
+}
