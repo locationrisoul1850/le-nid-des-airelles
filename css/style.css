@@ -65,11 +65,14 @@ body{
 
 .logo img{
 
-    height:40px;
-
-    width:auto;
-
+max-height:28px;
+width:auto;
+display:block;
 }
+.logo span{
+    font-size:0.9rem;
+}
+
 .navbar ul{
     list-style:none;
     display:flex;
