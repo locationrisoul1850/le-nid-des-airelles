@@ -508,13 +508,27 @@ padding-top:200px;
     text-align:center;
 }
 
+
     .coming-soon{
-        display:flex;
         flex-direction:column;
         align-items:center;
+        width:100%;
+
     }
 
+    .booking-card{
+        width:100%;
+        max-width:320px;
 
+    }
+
+.booking-logo{
+
+    width:140px;
+
+    height:auto;
+
+}
 
 section{
     padding:60px 20px;
