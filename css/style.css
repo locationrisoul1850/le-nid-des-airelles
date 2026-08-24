@@ -318,7 +318,7 @@ section h2{
     margin-top:15px;
     font-size:18px;
 }
-``
+
 /* DESCRIPTION */
 
 .description{
@@ -801,7 +801,7 @@ padding:25px 15px;
 
     width:260px;
 
-    height:320px;
+    min-height:320px;
 
     display:flex;
 
@@ -900,13 +900,9 @@ padding:25px 15px;
 }
 .booking-card p{
 
-    min-height:50px;
-
-    display:flex;
-
-    align-items:center;
-
     text-align:center;
+
+    margin:15px 0;
 
 }
 .booking-card .airbnb-btn{
