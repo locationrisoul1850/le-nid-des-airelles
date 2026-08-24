@@ -508,10 +508,13 @@ padding-top:200px;
     text-align:center;
 }
 
-.coming-soon{
-    flex-direction:column;
-    align-items:center;
-}
+    .coming-soon{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+
 
 section{
     padding:60px 20px;
@@ -784,27 +787,25 @@ padding:25px 15px;
 
 .booking-card{
 
-    width:260px;
-
-    height:320px;
-
     background:white;
 
     padding:20px;
 
     border-radius:18px;
 
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
     text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
     display:flex;
 
     flex-direction:column;
 
+    align-items:center;
+
     justify-content:space-between;
 
-    align-items:center;
+    min-height:300px;
 
 }
 
@@ -845,7 +846,7 @@ padding:25px 15px;
 
     width:140px;
 
-    height:100px;
+    height:140px;
 
     object-fit:contain;
 
@@ -853,17 +854,19 @@ padding:25px 15px;
 
 .coming-soon{
 
-    display:flex;
+    display:grid;
 
-    justify-content:center;
+    grid-template-columns:repeat(3, 1fr);
 
-    align-items:flex-start;
-
-    gap:30px;
+    gap:25px;
 
     margin-top:50px;
 
-    flex-wrap:wrap;
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
 
 }
 .booking-card{
