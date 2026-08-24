@@ -797,6 +797,14 @@ padding:25px 15px;
     min-width:250px;
 
 }
+.booking-card{
+
+    width:260px;
+
+    min-height:220px;
+
+}
+`
 
 .airbnb-card{
 
@@ -830,14 +838,28 @@ padding:25px 15px;
 
 }
 
+.booking-logo{
+
+    width:50px;
+
+    height:auto;
+
+    margin-bottom:10px;
+
+}
+
 .coming-soon{
 
     display:flex;
 
     justify-content:center;
 
+    align-items:stretch;
+
     gap:25px;
 
-    flex-wrap:wrap;
+    margin-top:40px;
 
 }
+
+
