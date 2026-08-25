@@ -1002,6 +1002,11 @@ padding:25px 15px;
 }
 @media(max-width:900px){
 
+    .calendar-container{
+overflow-x:auto;
+
+}
+    
     .calendar-container iframe{
 
         height:450px;
