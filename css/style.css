@@ -925,9 +925,47 @@ padding:25px 15px;
 
 .calendar-container{
 
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
     margin-top:40px;
 
 }
+
+.calendar-title{
+
+    text-align:center;
+
+    color:#17466f;
+
+    margin-bottom:20px;
+
+}
+
+.calendar-legend{
+
+    margin-top:20px;
+
+    text-align:center;
+
+}
+
+.calendar-legend span{
+
+    display:inline-block;
+
+    margin:5px 10px;
+
+}
+``
+
 
 .calendar-container iframe{
 
