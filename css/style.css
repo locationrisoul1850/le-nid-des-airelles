@@ -1000,6 +1000,20 @@ padding:25px 15px;
     }
 
 }
+
+/* CALENDRIER */
+
+.calendar-container{
+    width:100%;
+    overflow:hidden;
+}
+
+.calendar-container iframe{
+    width:100%;
+    border:none;
+    border-radius:20px;
+}
+
 @media(max-width:900px){
 
     .calendar-container{
