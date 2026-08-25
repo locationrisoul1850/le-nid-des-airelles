@@ -923,6 +923,24 @@ padding:25px 15px;
 
 }
 
+.calendar-container{
+
+    margin-top:40px;
+
+}
+
+.calendar-container iframe{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
 @media(max-width:900px){
 
     .coming-soon{
